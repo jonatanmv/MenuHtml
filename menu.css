@@ -1,0 +1,62 @@
+body {
+    font:14px Arial, Sans-serif;
+    color:#444;
+}
+
+a {
+    color:#333;
+    text-decoration:none;
+}
+
+
+#nav {
+    background:#222;
+    color:#eee;
+    width:90%;
+    margin:30px 5%;
+    border-radius:5px;
+    min-width:700px;
+}
+
+#nav a {
+    color:#eee;
+    padding:10px;
+    display:block;
+}
+
+#nav li:hover {
+    background:#555;
+}
+
+.menu li {
+    display:block;
+    position:relative; /* must, inorder to keep dropdowns positioned accordingly */
+}
+
+.menu > li {
+    display:inline-block;
+}
+.menu > li ul {
+    display:none; /* hide intially, when page loads */
+    background:#222;
+    position:absolute;
+    min-width:200px;
+}
+
+.menu > li > ul {
+    left:0;
+    top:100%;
+
+    /*for first dropdown of main nav*/
+}
+
+.menu > li > ul ul {
+    left:100%;
+    top:0;
+
+    /* for all sub dropdowns*/
+}
+
+.menu li:hover > ul {
+    display:block; /* only show, when mouse hover */
+}   
